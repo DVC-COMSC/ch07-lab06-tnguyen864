@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 2 3 4 5",
+      "output": "[\\W, \\w]*5[\\w, \\W]*4[\\W, \\w]*3[\\W, \\w]*2[\\w, \\W]*1[\\w, \\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "5 4 3 2 1",
+      "output": "[\\D]*1[\\D]*2[\\D]*3[\\D]*4[\\D]*5[\\D]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
